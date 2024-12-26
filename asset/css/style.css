@@ -1,0 +1,305 @@
+html{
+    font-size: 62.5%;
+}
+*{
+    box-sizing: border-box;
+}
+a {
+    list-style: none;
+    display: inline-block;
+}
+.header-main{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%);
+    background-color: white;
+
+}
+
+.header-main .inner-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+.header-main .inner-logo img{
+    height: 48px;
+    width: auto;
+    margin-right: 10px;
+}
+.header-main .inner-logo a{
+    color: var(--color-one);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-main .inner-logo span{ 
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.header-main .inner-menu ul {
+    list-style-type: none ;
+    display: flex;
+    
+}
+.header-main .inner-menu ul li a{
+    color: var(--color-one);
+    font-size: 18px;
+
+}
+.header-main .inner-menu ul li{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.header-main .inner-contact{
+    font-size: 18px;
+    color: var(--color-text);
+}
+.header-main .inner-social ul{
+    display: flex;
+    list-style-type: none;
+}
+.header-main .inner-social ul li a{
+    font-size: 26px;
+    color: var(--color-one);
+}
+.header-main .inner-social ul li {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.section-one{
+    background: #EFF1F4;
+    padding: 100px 0;
+}
+
+.section-one .inner-wrap{
+    display: flex;
+}
+
+.section-one .inner-wrap .inner-image{
+    width: 50%;
+    position: relative;
+}
+.section-one .inner-wrap .inner-image img{
+    width: 100%;
+}
+.section-one .inner-wrap .inner-image .inner-sale{
+    position: absolute;
+    top: 0;
+    right: 150px;
+    background-color: var(--color-two);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.section-one .inner-wrap .inner-image .inner-sale span:first-child{
+    font-size: 22px;
+    font-weight: 600;
+}
+.section-one .inner-wrap .inner-image .inner-sale span:nth-child(2){
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+
+.section-one .inner-wrap .inner-content{
+    width: 50%;
+}
+
+.section-one .inner-wrap .inner-content .inner-title{
+    font-size: 60px;
+    color: var(--color-one);
+    font-weight: bold;
+    margin-bottom: 4rem;
+}
+.section-one .inner-wrap .inner-content .inner-desc{
+    font-size: 20px;
+    color: var(--color-one);
+    margin-bottom: 3rem;
+}
+.section-one .inner-wrap .inner-content .inner-list{
+    display: flex;
+    margin-bottom: 6rem;
+
+}
+.section-one .inner-wrap .inner-content .inner-item{
+    width: 50%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.section-one .inner-wrap .inner-content .inner-item i{
+    margin-right: 10px;
+    font-size: 24px ;
+}
+.button{
+    background: var(--color-text);
+    color: #fff;
+    padding: 15px 45px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: 2px solid var(--color-text);
+}
+.button:hover{
+    color: var(--color-text);
+    background-color: #fff;
+}
+.button-two{
+    background: var(--color-two);
+    border-color: var(--color-two) ;
+    transition: all 0.2s linear;
+}
+.button-two:hover{
+    color: var(--color-two);
+    
+}
+
+.section-two{
+    padding: 100px 0;
+}
+
+.section-two .inner-wrap {
+    display: flex;
+}
+.section-two .inner-box {
+    width: calc(100% / 3 - 20px);
+    margin-right: 20px;
+    aspect-ratio: 4/3;
+    position: relative;
+    overflow: hidden;
+}
+.section-two .inner-box .inner-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-two .inner-box .inner-content .inner-tag,
+.section-two .inner-box .inner-content .inner-title,
+.section-two .inner-box .inner-content .button-one {
+    width: fit-content;     
+    max-width: 100%; 
+}
+.section-two .inner-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.6s;
+}
+.section-two .inner-box:hover img{
+    transform: scale(1.1);
+}
+
+.section-two .inner-box .inner-content .inner-tag{
+    background: #139F5D;
+    padding: 6px 18px;
+    font-size: 15px;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.section-two .inner-box .inner-content .inner-title{
+    color: #fff;
+    font-size: 33px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.button-one{
+    background: var(--color-one);
+    border-color: var(--color-one) ;
+    transition: all 0.2s linear;
+}
+.button-one:hover{
+    color: var(--color-one);
+}
+
+.section-two .inner-box:not(:nth-child(1)) .inner-title {
+    color: var(--color-one);
+    
+}
+
+.section-two .container .inner-wrap .inner-box .inner-sale{
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--color-two);
+}
+
+.section-two .container .inner-wrap .inner-box .inner-price-new{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--color-two);
+}
+.section-two .container .inner-wrap .inner-box .inner-price-old{
+    font-size: 25px;
+    opacity: 0.4;
+
+}
+
+.section-Three{
+    background: #EFF1F4;
+    padding: 100px 0;
+}
+
+.section-Three .container .inner-content{
+    text-align: center;
+    max-width: 630px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.section-Three .container .inner-content .inner-title{
+    font-size: 50px;
+    color: var(--color-one);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.section-Three .container .inner-content .inner-desc{
+    font-size: 20px;
+}
+
+.section-Three .inner-list{
+    display: flex;
+}
+
+.section-Three .inner-list .inner-item{
+    width: calc(100% / 3 - 20px);
+    margin-right: 20px ;
+    text-align: center;
+}
+
+.section-Three .inner-list .inner-item .fa-solid{
+    font-size: 25px;
+    margin-bottom: 2rem;
+}
+.section-Three .inner-list .inner-item .inner-title{
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--color-one);
+    margin-bottom: 1rem;
+}
+
+.section-Three .inner-list .inner-item .inner-desc{
+    font-size: 18px;
+
+}
